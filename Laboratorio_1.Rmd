@@ -1,0 +1,135 @@
+---
+title: "Laboratorio_1"
+author: "Yadira A. Martínez Hernández"
+date: "2024-02-09"
+output:
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+ **Laboratorio_1**
+
+#Maestria en ciencias forestales 
+
+#Yadira Abigail Martinez Hernández
+
+#1672205
+
+## Parte I R y Rstudio
+
+# Gastos totales
+
+(300 + 240 + 1527 + 400 + 1500 + 1833)
+
+celular <- 300
+
+transporte <- 240
+
+comestibles <- 1527
+
+gimnasio <- 400
+
+alquiler <- 1500
+
+otros <- 1833
+
+Gastos.totales <- (celular + transporte + comestibles + gimnasio + alquiler + otros)
+
+#Gasto total por 5 meses
+
+Gastos.totales * 5
+
+#Gasto total por 10 meses
+
+Gastos.totales * 10
+
+# Crear vector
+
+gastos <- c(celular, transporte, comestibles, gimnasio, alquiler, otros)
+
+barplot(sort(gastos, decreasing = TRUE), names.arg = sort(gastos, decreasing = TRUE))
+
+barplot(sort(gastos, decreasing = TRUE), names.arg = c('celular', 'transporte', 'comestibles', 'gimnasio', 'alquiler','otros'))
+
+
+## Parte II Varibles
+
+# Problema 1
+
+#  Identifique el tipo de variable (cualitativa o cuantitativa) para la lista de preguntas de una encuesta aplicada a estudiantes universitarios en una clase de estadística:
+
+#Nombre de estudiante.(Cualitativa)
+#Fecha de nacimiento (p. Ej., 21/10/1995).(Cuantitativa)
+#Edad (en años).(Cuantitativa)
+#Dirección de casa (por ejemplo, 1234 Ave. Alamo).(cualitativa)
+#Número de teléfono (por ejemplo, 510-123-4567).(cuantitativa)
+#Área principal de estudio.(cualitativa)
+#Grado de año universitario: primer año, segundo año, tercer año, último año.(cualitativa)
+#Puntaje en la prueba de mitad de período (basado en 100 puntos posibles).(cuantitativa)
+#Calificación general: A, B, C, D, F.(cualitativa)
+#Tiempo (en minutos) para completar la prueba final de MCF 202.(cualitativa)
+#Numero de hermanos.(cuantitativa)
+
+# Problema 2
+
+#  Vacunos de leche
+
+#Raza(cualitativo)
+#Color de pelaje (cualitativo)
+#Producción de leche(ml) (cuantitativo)
+#Tiempo de preñez (cuantitativo)
+
+# Problema 3
+
+#Considere una variable con valores numéricos que describen formas electrónicas de expresar opiniones personales: 1 = Twitter; 2 = correo electrónico; 3 = mensaje de texto; 4 = Facebook; 5 = blog.
+#¿Es esta una variable cuantitativa o cualitativa? Explique.
+
+# ¿Cuál es la forma electronica de expresarse menos común?
+#R: Blog
+
+#¿El titular contiene palabras clave de mi blog?
+#R: es una variable cualitativa ya que se refiere a las palabras clave y sea más fácil encontrar en el buscador. 
+
+# Problema 4
+
+# Cuál es la cantidad promedio de horas que los estudiantes de universidades públicas trabajan cada semana?
+  #(1)estudiantes
+  #(2)promedio de horas por semana
+  #(3)cuantitativa
+
+#¿Qué proporción de todos los estudiantes universitarios de México están inscritos en una unmiversidad pública?
+  #(1)estudiantes universitarios
+  #(2)cantidad de estudiantes universitarios van a universidades publicas
+  #(3)categórica
+
+#En los universidades públicas, ¿las estudiantes femeninas tienen un promedio de CENEVAL más alto que los estudiantes varones?
+  #(1)estudiantes femeninas
+  #(2)promedios de estudiantes
+  #(3)categórica
+
+#¿Es más probable que los atletas universitarios reciban asesoramiento académico que los atletas no universitarios?
+  #(1)atletas universitarios
+  #(2)asesoramiento
+  #(3)categórica
+
+#Si reuniéramos datos para responder a las preguntas de la investigación anterior, ¿qué datos podrían analizarse mediante un histograma? ¿Cómo lo sabes?.
+  #(1)datos
+  #(2)preguntas de la investigación
+  #(3)categórico
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r barplot, echo=TRUE}
+plot(barplot)
+```
+barplot(sort(gastos, decreasing = TRUE), names.arg = c('celular', 'transporte', 'comestibles', 'gimnasio', 'alquiler','otros')) 
+
